@@ -6,7 +6,7 @@ from django.conf import settings
 
 DEBUG = os.environ.get('DEBUG', 'on') == 'on'
 
-SECRET_KEY = os.environ.get('SECRET_KEY', os.urandom(32))
+SECRET_KEY = os.environ.get('SECRET_KEY', 'om!w83(6z1*(@44+yo_hy_-(l6_&m=ku&k@w6f@k&i*4el)0ot')
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
 
@@ -28,7 +28,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Hello World')
+    return HttpResponse('Hello Foo')
 
 
 urlpatterns = [
